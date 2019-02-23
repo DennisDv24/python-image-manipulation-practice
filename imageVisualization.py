@@ -19,9 +19,6 @@ cv2.polylines(img, [points], True, (0,255,255,255), 3) #Third value is to finish
 font = cv2.FONT_HERSHEY_SIMPLEX
 cv2.putText(img,'Hy', (600,500), font, 3, (255,255,255), 1, cv2.LINE_AA )
 
-
 cv2.imshow('image',img)
 cv2.waitKey(0)
 cv2.destroyAllWindows()
-
-cv2.imwrite('imagesToManipulate/transformedImages/jorge1mod.png', img)

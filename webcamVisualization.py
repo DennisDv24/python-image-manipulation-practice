@@ -1,9 +1,5 @@
 import cv2
 
-def addFrameMod(f, func, name):
-    name = cv2.cvtColor(f, func)
-    cv2.imshow('gray',name)
-
 cap = cv2.VideoCapture(0)
 
 while True:
