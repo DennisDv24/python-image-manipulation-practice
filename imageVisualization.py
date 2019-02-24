@@ -1,6 +1,7 @@
 import cv2
 import numpy as np
 import matplotlib.pyplot as plt
+import show
 
 img = cv2.imread('imagesToManipulate/jorge1.jpg', cv2.IMREAD_COLOR)
 #IMREAD_GRAYSCALE = 0, IMREAD_COLOR = 1, IMREAD_UNCHANGED = -1
@@ -19,6 +20,4 @@ cv2.polylines(img, [points], True, (0,255,255,255), 3) #Third value is to finish
 font = cv2.FONT_HERSHEY_SIMPLEX
 cv2.putText(img,'Hy', (600,500), font, 3, (255,255,255), 1, cv2.LINE_AA )
 
-cv2.imshow('image',img)
-cv2.waitKey(0)
-cv2.destroyAllWindows()
+show.image(['image', img])
