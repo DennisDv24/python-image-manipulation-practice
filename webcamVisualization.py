@@ -1,7 +1,6 @@
-import cv2
-import numpy as np
+#import numpy as np
 import show
-
+cv2 = show.cv2
 
 cap = cv2.VideoCapture(0)
 
@@ -16,5 +15,4 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'): #Press q = finish loop
         break
 
-cap.release()
-cv2.destroyAllWindows()
+show.finish(cap)

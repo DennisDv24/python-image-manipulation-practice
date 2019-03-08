@@ -1,5 +1,5 @@
-import cv2
 import show
+cv2 = show.cv2
 
 img = [cv2.imread('imagesToManipulate/lg0.png'),
        cv2.imread('imagesToManipulate/lg1.png'),

@@ -1,7 +1,7 @@
-import cv2
 import numpy as np
 import matplotlib.pyplot as plt
 import show
+cv2 = show.cv2
 
 img = cv2.imread('imagesToManipulate/jorge1.jpg', cv2.IMREAD_COLOR)
 #IMREAD_GRAYSCALE = 0, IMREAD_COLOR = 1, IMREAD_UNCHANGED = -1

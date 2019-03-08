@@ -1,5 +1,5 @@
-import cv2
 import show
+cv2 = show.cv2
 #import numpy as np
 
 img = cv2.imread('imagesToManipulate/thres2.jpg')

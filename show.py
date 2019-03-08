@@ -7,3 +7,9 @@ def image(image, video = False):
     if(video == False):
         cv2.waitKey(0)
         cv2.destroyAllWindows()
+
+def finish(frame):
+    cv2.destroyAllWindows()
+    print('windows destroyed')
+    frame.release()
+    print('capturing stopped')

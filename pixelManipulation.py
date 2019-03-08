@@ -1,6 +1,6 @@
 import imageVisualization as iv
-import cv2
 import show
+cv2 = show.cv2
 
 img = iv.img
 
